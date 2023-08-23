@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import TopNavigation from '@/common/navs/top/TopNavigation';
-import Footer from '@/components/Footer';
-import styles from '@/styles/Home.module.css';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import TopNavigation from "@/common/navs/top/TopNavigation";
+import Footer from "@/components/Footer";
+import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Details = () => {
   const router = useRouter();
 
   const Mint = () => {
-    router.push('/collections/mint');
+    router.push("/collections/mint");
   };
 
   return (
@@ -20,17 +20,17 @@ const Details = () => {
         <div className={styles.about_top}>
           <div className={styles.image_div}>
             <Image
-              src='/images/NFT4.svg'
-              alt=''
+              src="/images/NFT4.svg"
+              alt=""
               height={400}
               width={400}
               //   style={{ width: '568px', height: '400px' }}
             />
             <p>
-              FANRT Fac NFTS{' '}
+              FANRT Fac NFTS{" "}
               <Image
-                src='/images/badge-check.svg'
-                alt=''
+                src="/images/badge-check.svg"
+                alt=""
                 height={100}
                 width={100}
               />

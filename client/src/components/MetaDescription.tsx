@@ -1,8 +1,8 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 
 const AppStrings = {
-  APP_NAME: 'Stickerkeen',
+  APP_NAME: "Stickerkeen",
 };
 
 interface MetaDescriptionProps {
@@ -15,16 +15,16 @@ const MetaDescription: React.FC<MetaDescriptionProps> = ({ title }) => {
       <title>
         {title} - {AppStrings.APP_NAME}
       </title>
-      <meta name='description' content={`${title} - ` + AppStrings.APP_NAME} />
+      <meta name="description" content={`${title} - ` + AppStrings.APP_NAME} />
       <meta
-        name='twitter:description'
+        name="twitter:description"
         content={`${title} - ${AppStrings.APP_NAME}`}
       />
       <meta
-        property='og:description'
+        property="og:description"
         content={`${title} - ${AppStrings.APP_NAME}`}
       />
-      <meta property='og:title' content={`${title}`} />
+      <meta property="og:title" content={`${title}`} />
     </Head>
   );
 };

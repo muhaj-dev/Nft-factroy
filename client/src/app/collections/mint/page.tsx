@@ -1,7 +1,7 @@
-import TopNavigation from '@/common/navs/top/TopNavigation';
-import Footer from '@/components/Footer';
-import styles from '@/styles/Home.module.css';
-import Image from 'next/image';
+import TopNavigation from "@/common/navs/top/TopNavigation";
+import Footer from "@/components/Footer";
+import styles from "@/styles/Home.module.css";
+import Image from "next/image";
 
 const Mint = () => {
   return (
@@ -10,18 +10,18 @@ const Mint = () => {
       <div className={styles.mint_details}>
         <div className={styles.left}>
           <Image
-            src='/images/NFT4.svg'
-            alt=''
+            src="/images/NFT4.svg"
+            alt=""
             height={400}
             width={568}
             // style={{ width: "568px", height: "400px" }}
           />
           <div>
             <p>
-              FANRT Fac NFTS{' '}
+              FANRT Fac NFTS{" "}
               <Image
-                src='/images/badge-check.svg'
-                alt=''
+                src="/images/badge-check.svg"
+                alt=""
                 height={100}
                 width={100}
               />
