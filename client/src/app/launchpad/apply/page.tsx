@@ -1,14 +1,14 @@
-'use client';
-import Button from '@/common/Button';
-import ArtworkDetailsForm from '@/components/Forms/ArtworkDetails';
-import GetStarted from '@/components/Forms/GetStarted';
+"use client";
+import Button from "@/common/Button";
+import ArtworkDetailsForm from "@/components/Forms/ArtworkDetails";
+import GetStarted from "@/components/Forms/GetStarted";
 import {
   SecondSectionForm,
   SectionOneForm,
-} from '@/components/Forms/ProjectDetails';
-import SalesPlanForm from '@/components/Forms/SalesPlan';
-import TeamInformationForm from '@/components/Forms/TeamInformation';
-import React, { useState } from 'react';
+} from "@/components/Forms/ProjectDetails";
+import SalesPlanForm from "@/components/Forms/SalesPlan";
+import TeamInformationForm from "@/components/Forms/TeamInformation";
+import React, { useState } from "react";
 
 const Apply: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -40,13 +40,13 @@ const Apply: React.FC = () => {
     }
   };
   return (
-    <div className='flex flex-col justify-start h-screen mt-10 mb-10'>
-      <div className='w-4/5'>{previewCurrentPage()}</div>
+    <div className="flex flex-col justify-start h-screen mt-10 mb-10">
+      <div className="w-4/5">{previewCurrentPage()}</div>
       {currentPage > 1 && (
-        <div className='flex justify-end w-4/5 mt-5'>
+        <div className="flex justify-end w-4/5 mt-5">
           <Button
             handleClick={handleNextPage}
-            className='bg-gradient-linear px-6 py-3'
+            className="bg-gradient-linear px-6 py-3"
           >
             {isLastPage ? <p>Submit</p> : <p> Proceed</p>}
           </Button>

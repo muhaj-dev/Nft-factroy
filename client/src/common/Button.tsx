@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import Link from 'next/link';
-import { orbitron } from '@/fonts/fonts';
+import React, { ReactNode } from "react";
+import Link from "next/link";
+import { orbitron } from "@/fonts/fonts";
 interface CustomButton {
   children?: ReactNode;
   style?: object;
@@ -13,8 +13,8 @@ interface CustomButton {
 const Button: React.FC<CustomButton> = ({
   children,
   style,
-  as = 'button',
-  href = '/',
+  as = "button",
+  href = "/",
   handleClick,
   className,
 }) => {
@@ -23,11 +23,11 @@ const Button: React.FC<CustomButton> = ({
       className={`${className} rounded-md ${orbitron.className}`}
       onClick={handleClick}
       style={{
-        cursor: 'pointer',
+        cursor: "pointer",
         ...style,
       }}
     >
-      {as === 'link' ? <Link href={href}>{children}</Link> : <>{children}</>}
+      {as === "link" ? <Link href={href}>{children}</Link> : <>{children}</>}
     </button>
   );
 };

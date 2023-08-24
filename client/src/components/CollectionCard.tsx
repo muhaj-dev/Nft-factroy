@@ -1,16 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-interface CardProps {
-  source: string;
+interface CollectionCardProps {
   title: string;
-  price?: string;
+  source: string;
   children?: React.ReactNode;
-  className?: string;
 }
 
-const Card: React.FC<CardProps> = (props) => {
-  const { source, title, price, children, className } = props;
+const CollectionCard: React.FC<CollectionCardProps> = (props) => {
+  const { title, source, children } = props;
   return (
     <div
       style={{
@@ -18,7 +16,6 @@ const Card: React.FC<CardProps> = (props) => {
         borderRadius: "0.5rem",
         border: "1px solid #FFC72C",
       }}
-      className={className}
     >
       <div>
         <Image
@@ -40,13 +37,9 @@ const Card: React.FC<CardProps> = (props) => {
           priority
         />
       </div>
-      <div className="px-3 tracking-wide">
-        <p className="font-light text-sm">Floor</p>
-        <h6 className="mb-3">{price}</h6>
-      </div>
-      <div>{children}</div>
+      <div className="p-3">{children}</div>
     </div>
   );
 };
 
-export default Card;
+export default CollectionCard;
