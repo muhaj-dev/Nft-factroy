@@ -14,7 +14,7 @@ const GetStarted: React.FC<GetStartedProps> = ({ nextPage }) => {
       <h3 className={`${orbitron.className} text-primary text-4xl mb-3`}>
        Create Your NFTs
       </h3>
-      <p className="mb-10 text-white w-">
+      <p className="mb-10 text-white w-[800px]">
         Turn your digital products/services into unique NFTs with just a few
         clicks. Choose your preferred blockchain, set the supply, and define
         rarity to create captivating digital assets.
