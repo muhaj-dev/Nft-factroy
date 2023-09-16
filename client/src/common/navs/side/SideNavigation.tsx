@@ -37,7 +37,7 @@ const SideBar = () => {
         <div className="px-4">
           <Logo height={30} />
         </div>
-        <div className="inline-flex flex-col items-start py-10">
+        <div className="flex flex-col py-10">
           {navigationLinks.map(({ name, to, icon }) => (
             <Link key={name} href={to} className={`${poppins.className} text-sm`}>
               <div
@@ -46,6 +46,8 @@ const SideBar = () => {
                   margin: "1.25rem 0",
                   backgroundColor:
                     to === pathName ? "rgba(255, 199, 44, 0.12)" : "none",
+                    borderRight:
+                    to === pathName ? "4px solid #FFC72C" : "none",
                 }}
               >
                 <Image src={icon} alt="icons" height={20} width={20} />
