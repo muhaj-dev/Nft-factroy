@@ -411,11 +411,14 @@
 
 .mint {
   overflow: hidden;
+  padding: 4px;
 }
 
 .mint_details {
   display: flex;
+  justify-content: space-between;
   gap: 160px;
+  /* background-color: green; */
   margin-left: 80.81px;
 }
 
@@ -437,7 +440,7 @@
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 120%;
   gap: 16px;
 }
@@ -448,7 +451,7 @@
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 120%;
   color: #dcdcdc;
   text-transform: uppercase;
@@ -462,7 +465,7 @@
   );
   backdrop-filter: blur(22px);
   border-radius: 16px;
-  width: 430px;
+  width: 420px;
   height: 522px;
   border-radius: 16px;
   margin-top: 63px;

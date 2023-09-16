@@ -9,12 +9,12 @@ interface GetStartedProps {
 const GetStarted: React.FC<GetStartedProps> = ({ nextPage }) => {
   return (
     <div
-      className={`flex justify-center items-center flex-col w-3/4 ml-5 lg:mt-32 text-center ${poppins.className} `}
+      className={`flex justify-center items-center flex-col w-full mt-4 text-center ${poppins.className} `}
     >
       <h3 className={`${orbitron.className} text-primary text-4xl mb-3`}>
        Create Your NFTs
       </h3>
-      <p className="mb-10 text-white w-[700px]">
+      <p className="mb-10 text-white w-">
         Turn your digital products/services into unique NFTs with just a few
         clicks. Choose your preferred blockchain, set the supply, and define
         rarity to create captivating digital assets.

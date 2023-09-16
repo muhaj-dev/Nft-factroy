@@ -7,13 +7,15 @@ import NavTools from "@/common/navs/NavTools";
 
 const LaunchPad = () => {
   return (
-    <div className="flex min-h-screen">
-      <SideBar />
-      <div className="flex-1 flex-col px-4 py-10">
-        <div className="mx-5 text-white">
-          <NavTools title="Launchpad"  isMenu={true} />
-        </div>
-        <Apply />
+    <div className="flex flex-row gap-10 justify-start min-h-screen">
+      <div className=" bg-red-500 w-[12rem] h-screen">
+        <SideBar />
+      </div>
+      <div className="mr-auto w-[80%] bg-green-600 py-10">
+        {/* <div className=" text-white"> */}
+          <NavTools title="Launchpad" isMenu={true} />
+        {/* </div> */}
+        {/* <Apply /> */}
       </div>
     </div>
   );

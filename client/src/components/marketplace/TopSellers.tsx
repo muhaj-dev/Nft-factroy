@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const TopSellers = () => {
   return (
-    <div className={`${orbitron.className} m-28`}>
+    <div className={`${orbitron.className} my-28`}>
       <h2 className="text-2xl text-center">Top Sellers</h2>
       <div className="flex justify-center my-8">
         <DateSelection />
       </div>
-      <div className="grid grid-cols-2 gap-x-8">
+      <div className="flex flex-wrap justify-between gap-x-8">
         {Array(6)
           .fill(null)
           .map((_, index) => (
             <div
-              className="flex space-x-4 mb-5 bg-sidebar rounded-md px-4 py-2 items-center"
+              className="flex space-x-4 mb-5 w-full tablet_l:w-[45%] bg-sidebar rounded-md px-4 py-2 items-center"
               key={index}
               style={{
                 border: "2px solid transparent",

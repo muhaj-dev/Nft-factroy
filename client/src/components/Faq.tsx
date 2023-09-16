@@ -34,7 +34,7 @@ const FAQ = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="flex  flex-col   flex-wrap mt-[32px] px-3 sm:px-6 "
+      className="flex  flex-col   flex-wrap mt-[32px] "
     >
      
       <div className="mt-[24px] w-full  ">
