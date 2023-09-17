@@ -32,7 +32,7 @@ const TopNavigation = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className=" fixed top-0 w-full py-2 bg-[#1B0A1A]  bg-opacity-60 backdrop-blur-[4px] ">
+    <div className=" fixed top-0 z-50 w-full py-2 bg-[#1B0A1A]  bg-opacity-60 backdrop-blur-[4px] ">
       <div className="mx-auto justify-between items-center w-[97%] tablet_l:w-[94%] laptop_l:w-[89%] max-w-[1280px] flex">
         <div className="flex gap-9">
           <Image src={app_logo} alt={"app_logo"} height={45} width={45} />

@@ -11,7 +11,10 @@ import ColletionHeader from "@/components/ColletionHeader";
 const collections: React.FC = () => {
   return (
     <>
+    <div className="z-50">
       <TopNavigation />
+
+    </div>
       <div className="mx-auto w-[97%] tablet_l:w-[94%] laptop_l:w-[89%] max-w-[1280px]">
         {/* <SearchCollection /> */}
         <ColletionHeader />
