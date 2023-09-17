@@ -7,6 +7,7 @@ import NSMECollection from "@/components/marketplace/NSMECollection";
 import TopSellers from "@/components/marketplace/TopSellers";
 import CollectionCard from "@/components/CollectionCard";
 import ColletionHeader from "@/components/ColletionHeader";
+import MarketTrend from "@/components/MarketTrend";
 
 const collections: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const collections: React.FC = () => {
         <TrendingCollection />
         <NSMECollection />
         <TopSellers />
+        <MarketTrend />
       </div>
         <Footer />
     </>
