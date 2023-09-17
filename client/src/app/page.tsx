@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         <Footer />
-        {/* <div className="absolute bottom-0 right-0 bg-gradient-to-br from-transparent via-transparent to-primary opacity-10 w-[30%] h-[500px]    "></div> */}
+        <div className="absolute bottom-0 right-0 bg-gradient-to-br from-transparent via-transparent to-primary opacity-10 w-[30%] h-[500px]    "></div>
       </main>
     </>
   );

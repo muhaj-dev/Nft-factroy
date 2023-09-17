@@ -3,7 +3,6 @@ import Logo from "@/common/Logo";
 import { poppins } from "@/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -32,10 +31,7 @@ const SideBar: React.FC<SideBarProps> = ({ menuNav }) => {
     },
   ];
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    >
+    <div>
       <div
         className="py-10 w-[11rem] laptop:w-[15rem] h-screen fixed"
         style={{
@@ -73,7 +69,7 @@ const SideBar: React.FC<SideBarProps> = ({ menuNav }) => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
