@@ -62,7 +62,7 @@ const TopNavigation = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       className="absolute z-10 tablet_l:hidden flex  top-0 w-full bg-black h-[100dvh]">
-        <div className="mx-auto bg-green-400 ">
+        <div className="mx-auto w-[95%]">
         <div className="mx-auto w-[96%] mt-5  cursor-pointer" onClick={menuNav}>
           <AiOutlineMenu className="tablet_l:hidden ml-auto flex h-7 w-7 items-center" />
         </div>

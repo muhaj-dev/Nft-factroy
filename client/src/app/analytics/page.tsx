@@ -13,7 +13,6 @@ const Analytics: React.FC = () => {
     setOpen(!Open);
   };
 
-
   return (
     <div className="flex flex-row gap-10  min-h-screen">
       <div
@@ -32,10 +31,9 @@ const Analytics: React.FC = () => {
         )}
       </div>
       <div className={Open ? "mr-auto w-[70%] py-10" : "w-[100%] py-10 "}>
-          <NavTools title="Analytics" isMenu={true} />
-        </div>
+        <NavTools title="Analytics" isMenu={true} />
       </div>
-    // </div>
+    </div>
   );
 };
 
