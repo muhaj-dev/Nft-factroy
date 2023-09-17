@@ -11,7 +11,7 @@ const GetStarted: React.FC<GetStartedProps> = ({ nextPage }) => {
     <div
       className={`flex justify-center items-center flex-col w-full mt-4 text-center ${poppins.className} `}
     >
-      <h3 className={`${orbitron.className} text-primary text-4xl mb-3`}>
+      <h3 className={`${orbitron.className} text-primary text-3xl mb-3`}>
        Create Your NFTs
       </h3>
       <p className="mb-10 text-white w-[90%] laptop:w-[800px]">
