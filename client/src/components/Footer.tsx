@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="h-[2px] bg-[#FE7947] my-8 " />
+      <div className="h-[1px] bg-[#FE7947] my-8 " />
       <div className="">
         <p className="text-center text-lg tracking-[1px]">Privacy Policy-Terms of Service</p>
         <p className="text-center text-sm mt-1 tracking-[1px] ">© Copyright 2023</p>
