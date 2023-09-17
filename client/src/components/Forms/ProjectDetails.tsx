@@ -12,7 +12,7 @@ export const SectionOneForm = () => {
   return (
     <div className="my-10">
       <h2 className={`${orbitron.className} text-primary text-2xl mb-5`}>
-        Project Details
+        Project/Service Details
       </h2>
       <EditableSection
         title={"Project Title"}
@@ -33,7 +33,7 @@ export const SectionOneForm = () => {
           }
           setDescription(value);
         }}
-        subTitle="Share your project's Pitch, Concept, Utility & Major partners involved."
+        subTitle="Brief Description of the Product/Service to be Minted as NFT"
       />
       <EditableSection
         title={"Whitepaper"}
