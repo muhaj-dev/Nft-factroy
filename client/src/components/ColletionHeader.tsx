@@ -1,12 +1,20 @@
 import React from 'react'
 import { orbitron } from "@/fonts/fonts";
+import Image from 'next/image';
 
 
 const ColletionHeader = () => {
   return (
     <div className='my-32 w-full tablet_l:w-[97%] laptop_l:w-[97%] max-w-[1280px]'>
-      <div className='bg-red-500 flex justify-center items-center mx-auto w-full h-[500px] rounded-lg'>
-      <div className="text-center my-auto">
+      <div className='relative flex justify-center items-center mx-auto w-full h-[400px] laptop:h-[500px] rounded-lg'>
+        <Image 
+        className='absolute  w-full'
+          src='/collection.png'
+          width={1200}
+          height={1000}
+          alt=''
+        />
+      <div className="z-10 text-center my-auto">
         <h2 className={`${orbitron.className} text-3xl text-[#FFC72C]`}>
           Browse Collections
         </h2>
