@@ -2,6 +2,7 @@
 import Button from "@/common/Button";
 import ArtworkDetailsForm from "@/components/Forms/ArtworkDetails";
 import GetStarted from "@/components/Forms/GetStarted";
+import Onborading from "@/components/Forms/Onborading";
 import {
   SecondSectionForm,
   SectionOneForm,
@@ -24,16 +25,18 @@ const Apply: React.FC = () => {
   const previewCurrentPage = () => {
     switch (currentPage) {
       case 1:
-        return <GetStarted nextPage={handleNextPage} />;
+        return <Onborading nextPage={handleNextPage}/>;
       case 2:
-        return <SectionOneForm />;
+        return <GetStarted nextPage={handleNextPage} />;
       case 3:
-        return <SecondSectionForm />;
+        return <SectionOneForm />;
       case 4:
-        return <TeamInformationForm />;
+        return <SecondSectionForm />;
       case 5:
-        return <ArtworkDetailsForm />;
+        return <TeamInformationForm />;
       case 6:
+        return <ArtworkDetailsForm />;
+      case 7:
         return <SalesPlanForm />;
       default:
         return;
@@ -42,7 +45,7 @@ const Apply: React.FC = () => {
   return (
     <div className="flex flex-col justify-start h-screen mt-10 mb-10">
       <div className="w-[98%] ">{previewCurrentPage()}</div>
-      {currentPage > 1 && (
+      {currentPage >2 && (
         <div className="flex justify-end mt-5">
           <Button
             handleClick={handleNextPage}
