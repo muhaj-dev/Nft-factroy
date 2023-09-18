@@ -18,11 +18,11 @@ const Onboarding: React.FC<GetStartedProps> = ({ nextPage }) => {
               "linear-gradient(134deg, rgba(255, 199, 44, 0.16) 4.92%, rgba(255, 199, 44, 0.00) 50%)",
           }}
         className="border-[2px] text-primary border-primary border-opacity-25 py-2 px-3 w-fit rounded-lg">
-            Ongoing <span className="text-[15px] font-[400] text-white">Upcoming</span>
+            Ongoing <span className="text-[15px] font-[400] ml-3 text-gray-400">Upcoming</span>
         </div>
-        <div className="mt-8 mb-16 flex justify-between w-[90%] tablet_l:w-[85%] flex-wrap gap-7">
+        <div className="mt-8 mb-16 flex justify-between w-[90%] tablet_l:w-[100%] laptop_l:w-[85%] flex-wrap gap-y-7 gap-x-3">
           <div
-            className={`w-[90%] flex flex-col tablet_l:w-[45%] ${orbitron.className}`}
+            className={`w-[100%] flex flex-col tablet_l:w-[47%] ${orbitron.className}`}
           >
             <div
               className={`flex flex-col bg-sidebar ml-auto w-full tablet-l:w-[450px] rounded-md`}
@@ -66,7 +66,7 @@ const Onboarding: React.FC<GetStartedProps> = ({ nextPage }) => {
           </div>
 
           <div
-            className={`w-[90%] flex flex-col tablet_l:w-[45%] ${orbitron.className}`}
+            className={`w-[100%] flex flex-col tablet_l:w-[47%] ${orbitron.className}`}
           >
             <div
               className={`flex flex-col bg-sidebar ml-auto w-full tablet-l:w-[450px] rounded-md`}
@@ -110,7 +110,7 @@ const Onboarding: React.FC<GetStartedProps> = ({ nextPage }) => {
           </div>
 
           <div
-            className={`w-[90%] flex flex-col tablet_l:w-[45%] ${orbitron.className}`}
+            className={`w-[100%] flex flex-col tablet_l:w-[47%] ${orbitron.className}`}
           >
             <div
               className={`flex flex-col bg-sidebar ml-auto w-full tablet-l:w-[450px] rounded-md`}
@@ -154,7 +154,7 @@ const Onboarding: React.FC<GetStartedProps> = ({ nextPage }) => {
           </div>
 
           <div
-            className={`w-[90%] flex flex-col tablet_l:w-[45%] ${orbitron.className}`}
+            className={`w-[100%] flex flex-col tablet_l:w-[47%] ${orbitron.className}`}
           >
             <div
               className={`flex flex-col bg-sidebar ml-auto w-full tablet-l:w-[450px] rounded-md`}
@@ -198,10 +198,10 @@ const Onboarding: React.FC<GetStartedProps> = ({ nextPage }) => {
           </div>
         </div>
       </div>
-      <h3 className={`${orbitron.className} text-3xl mb-3`}>
+      <h3 className={`${orbitron.className} text-2xl tablet_l:text-3xl mb-3`}>
         Launchpad Project Application
       </h3>
-      <p className="mb-10 text-white w-[100%] laptop:w-[90%]">
+      <p className="mb-10 text-white w-[100%] text-sm tablet_l:text-md laptop:w-[90%]">
         Turn your digital products/services into unique NFTs with just a few
         clicks. Choose your preferred blockchain, set the supply, and define
         rarity to create captivating digital assets.

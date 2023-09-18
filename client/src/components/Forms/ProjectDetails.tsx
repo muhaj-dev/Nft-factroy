@@ -36,7 +36,7 @@ export const SectionOneForm = () => {
         subTitle="Brief Description of the Product/Service to be Minted as NFT"
       />
       <EditableSection
-        title={"Whitepaper"}
+        title={"Product Category"}
         placeholder={"Start typing"}
         onChangeHandler={(value: string): void => {
           if (!value) {
@@ -44,10 +44,10 @@ export const SectionOneForm = () => {
           }
           setWhitePaperText(value);
         }}
-        subTitle="Will be attached to launchpad"
+        subTitle="Category (e.g Fashion, Food, Art, Digital Collectibles, Music, Digital Goods, Handyman)"
       />
       <EditableSection
-        title={"Goal"}
+        title={"Unique Features or Selling Points"}
         placeholder={"Start typing"}
         onChangeHandler={(value: string): void => {
           if (!value) {
@@ -55,6 +55,17 @@ export const SectionOneForm = () => {
           }
           setGoalText(value);
         }}
+      />
+      <EditableSection
+        title={"Blockchain"}
+        placeholder={"Ethereum"}
+        onChangeHandler={(value: string): void => {
+          if (!value) {
+            value = " ";
+          }
+          setWhitePaperText(value);
+        }}
+        subTitle="Preferred Blockchain for Minting (Ethereum, Binance Smart Chain, etc.)"
       />
     </div>
   );
