@@ -12,14 +12,20 @@ import SalesPlanForm from "@/components/Forms/Minting";
 import TeamInformationForm from "@/components/Forms/TeamInformation";
 import React, { useState } from "react";
 import Social from "@/components/Forms/Social";
+import ConfirmSubmit from "@/components/Forms/ConfirmSubmit";
 
 const Apply: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [comfirm, setComfirm] = useState<Boolean>(false);
 
   const handleNextPage = () => {
     if (currentPage < 8) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
+  };
+
+  const comfimSubmit = () => {
+   setComfirm(!comfirm)
   };
 
   const isLastPage = currentPage === 8;
@@ -68,6 +74,8 @@ const Apply: React.FC = () => {
           )}
         </div>
       )}
+
+      <ConfirmSubmit />
     </div>
   );
 };
