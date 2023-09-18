@@ -27,7 +27,7 @@ const Apply: React.FC = () => {
   const previewCurrentPage = () => {
     switch (currentPage) {
       case 1:
-        return <Onborading nextPage={handleNextPage}/>;
+        return <Onborading nextPage={handleNextPage} />;
       case 2:
         return <GetStarted nextPage={handleNextPage} />;
       case 3:
@@ -40,8 +40,8 @@ const Apply: React.FC = () => {
         return <ArtworkDetailsForm />;
       case 7:
         return <Minting />;
-        case 8:
-          default:
+      case 8:
+      default:
         return <Social />;
         return;
     }
@@ -51,12 +51,21 @@ const Apply: React.FC = () => {
       <div className="w-[98%] ">{previewCurrentPage()}</div>
       {currentPage > 2 && (
         <div className="w-[98%] flex justify-end mt-5">
-          <Button
-            handleClick={handleNextPage}
-            className="bg-gradient-linear px-6 mb-5 py-3"
-          >
-            {isLastPage ? <p>Submit</p> : <p> Proceed</p>}
-          </Button>
+          {isLastPage ? (
+            <Button
+              handleClick={handleNextPage}
+              className="bg-gradient-linear px-6 mb-5 py-3"
+            >
+              <p>Submit</p>
+            </Button>
+          ) : (
+            <Button
+              handleClick={handleNextPage}
+              className="bg-gradient-linear px-6 mb-5 py-3"
+            >
+              <p> Proceed</p>
+            </Button>
+          )}
         </div>
       )}
     </div>
