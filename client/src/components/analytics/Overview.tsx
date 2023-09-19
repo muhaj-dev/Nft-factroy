@@ -41,7 +41,7 @@ const Overview = () => {
         
         </div>
 
-        <div className=' flex justify-between mt-8 mb-5'>
+        <div className=' flex justify-between mt-12'>
                 <h2 className={`${orbitron.className} text-2xl mb-3`}>Analytics</h2>
                 <button
                 className={`${orbitron.className} overview_b text-[#FFC72C] px-4 py-2`}
