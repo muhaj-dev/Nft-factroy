@@ -53,7 +53,7 @@ const RedeemNft = () => {
             </p>
          </div>
           <p className='bg-[#FFC72C] h-[1.5px] my-7'></p>
-          <div className="flex flex-wrap gap-5 justify-between">
+          <div className="flex flex-wrap gap-5 justify-between w-full tablet_l:w-[60%]">
             <p className="flex flex-col text-[15px]">
               Unique Owners
               <span className={`${orbitron.className} text-xl`}>120 Owners</span>
