@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { orbitron } from "@/fonts/fonts";
 import Button from "@/common/Button";
+import { AiOutlineTwitter } from 'react-icons/ai'
 import Image from "next/image";
 
 interface GetStartedProps {
@@ -12,6 +13,7 @@ interface GetStartedProps {
 export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
   const [isComfirmed, setIsComfirmed] = useState(true);
   const [subcom, setSubcom] = useState(true);
+  const [share, setShare] = useState(false);
 
   useEffect(() => {
     // Use setTimeout to change the text after 3 seconds
@@ -34,7 +36,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
 
   const submitsucces = () => {
     // nextPage()
-    setSubcom(!subcom);
+    setShare(true)
   };
 
 
@@ -106,12 +108,25 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
             />
             </p>           
           <div className="flex justify-center my-6">
-              <Button
+             {!share ? (
+             <Button
                 handleClick={submitsucces}
               className={`${orbitron.className} bg-gradient-linear px-6 mb-5 py-3`}
               >
                 <p> Redeem NFT</p>
               </Button>
+              ) : (
+                <Button
+                // handleClick={submitsucces}
+              className={`${orbitron.className} bg-gradient-linear px-6 mb-5 py-3`}
+              >
+                <p className="flex gap-2 items-center">Share on Twitter 
+                    <AiOutlineTwitter size={20} />
+                </p>
+              </Button>
+              )
+              
+            }
               
             </div>
           </div>)}
