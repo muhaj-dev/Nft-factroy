@@ -4,6 +4,7 @@ import { orbitron } from "@/fonts/fonts";
 import Button from "@/common/Button";
 import { AiOutlineTwitter } from 'react-icons/ai'
 import Image from "next/image";
+import Link from "next/link";
 
 interface GetStartedProps {
   cancel: () => void;
@@ -66,7 +67,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
             <p className="text-center text-xl w-[90%] mx-auto mt-2">
             Your transaction is been published, please exercise patience!
             </p>
-            <p className="text-center w-fit mx-auto text-primary flex justify-center gap-2 items-center text-lg tablet_l:w-[550px] mt-6 ">
+            <Link href='/redeemNft' className="text-center w-fit mx-auto text-primary flex justify-center gap-2 items-center text-lg tablet_l:w-[550px] mt-6 ">
             View On Explorer
             <Image
               width={15}
@@ -76,7 +77,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
               src="/images/explora.svg"
               alt="checked"
             />
-            </p>           
+            </Link>           
           </div>)
             :
          ( <div className="relative z-30 w-[95%] py-32 rounded-2xl shadow-lg mx-auto mt-32 h-fit laptop_l:w-[1000px] bg-[#130712] ">
@@ -96,7 +97,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
             <p className="text-center text-xl w-[90%] mx-auto mt-2">
             Your mint is confirmed - you officially own a West cravings Nft
             </p>
-            <p className="text-center w-fit mx-auto text-primary flex justify-center gap-2 items-center text-lg tablet_l:w-[550px] mt-6 ">
+            <Link href='/redeemNft' className="text-center w-fit mx-auto text-primary flex justify-center gap-2 items-center text-lg tablet_l:w-[550px] mt-6 ">
             View On Explorer
             <Image
               width={15}
@@ -106,7 +107,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
               src="/images/explora.svg"
               alt="checked"
             />
-            </p>           
+            </Link>           
           <div className="flex justify-center my-6">
              {!share ? (
              <Button
