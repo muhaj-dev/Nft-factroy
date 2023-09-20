@@ -75,7 +75,7 @@ const ProfileSideBar: React.FC<ProfileSideBarProps> = ({ menuNav }) => {
               <div
                 className="flex gap-4 w-full text-white items-center px-4 py-3"
                 style={{
-                  margin: ".65rem 0",
+                  margin: ".6rem 0",
                   backgroundColor:
                     to === pathName ? "rgba(255, 199, 44, 0.12)" : "none",
                   borderRight: to === pathName ? "4px solid #FFC72C" : "none",
