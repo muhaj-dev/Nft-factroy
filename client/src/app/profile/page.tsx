@@ -120,7 +120,7 @@ const Profile: React.FC = () => {
           </div>
           <div className="mt-14 w-3/4">
             <p className="text-primary mt-3 mb-2">Redeemed Nfts (5)</p>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6">
               {[
                 "Pie NFTs",
                 "Sweet slice NFTs",
