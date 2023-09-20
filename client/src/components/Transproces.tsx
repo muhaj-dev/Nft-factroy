@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { orbitron } from "@/fonts/fonts";
 import Button from "@/common/Button";
 import Image from "next/image";
@@ -10,8 +10,22 @@ interface GetStartedProps {
 }
 
 export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
-  const [isChecked, setIsChecked] = useState(true);
-  const [subcom, setSubcom] = useState(false);
+  const [isComfirmed, setIsComfirmed] = useState(true);
+  const [subcom, setSubcom] = useState(true);
+
+  useEffect(() => {
+    // Use setTimeout to change the text after 3 seconds
+    const timeoutId = setTimeout(() => {
+      setIsComfirmed(false);
+    }, 3000);
+
+    // Clear the timeout to prevent memory leaks when the component unmounts
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+
 
   const closeComfimSubmit = () => {
     setSubcom(!subcom);
@@ -26,13 +40,14 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
 
   return (
     <>
-      {subcom ? (
+      {subcom && (
         <div className="fixed  flex h-[100dvh] left-0 top-0 l w-[100dvw]">
           <div
             onClick={closeComfimSubmit}
             className="absolute h-[100dvh] left-0 top-0 l w-[100dvw]  bg-[#1B0A1A]  bg-opacity-60"
           />
-          <div className="relative z-30 w-[95%] py-32 rounded-2xl shadow-lg mx-auto mt-32 h-fit laptop_l:w-[1000px] bg-[#130712] ">
+
+         {isComfirmed ? (<div className="relative z-30 w-[95%] py-32 rounded-2xl shadow-lg mx-auto mt-32 h-fit laptop_l:w-[1000px] bg-[#130712] ">
             <Image
               width={15}
               height={15}
@@ -60,15 +75,9 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
               alt="checked"
             />
             </p>           
-          </div>
-        </div>
-      ) : (
-        <div className="fixed  flex h-[100dvh] left-0 top-0 l w-[100dvw]">
-          <div
-            onClick={closeComfimSubmit}
-            className="absolute h-[100dvh] left-0 top-0 l w-[100dvw]  bg-[#1B0A1A]  bg-opacity-60"
-          />
-          <div className="relative z-30 w-[95%] py-32 rounded-2xl shadow-lg mx-auto mt-32 h-fit laptop_l:w-[1000px] bg-[#130712] ">
+          </div>)
+            :
+         ( <div className="relative z-30 w-[95%] py-32 rounded-2xl shadow-lg mx-auto mt-32 h-fit laptop_l:w-[1000px] bg-[#130712] ">
             <Image
               width={15}
               height={15}
@@ -105,7 +114,7 @@ export const Transproces: React.FC<GetStartedProps> = ({ cancel }) => {
               </Button>
               
             </div>
-          </div>
+          </div>)}
         </div>
       )}
     </>
