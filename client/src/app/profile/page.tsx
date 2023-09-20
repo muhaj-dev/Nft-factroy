@@ -9,7 +9,7 @@ const Profile: React.FC = () => {
   return (
     <>
       <TopNavigation />
-      <div className={`${orbitron.className} px-10`}>
+      <div className={`${orbitron.className} px-10 mt-24`}>
         <div
           className="flex flex-col"
           style={{
