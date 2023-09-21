@@ -32,7 +32,7 @@ const Mint = () => {
   return (
     <div className={styles.mint}>
       <TopNavigation />
-      <div className={`flex-col laptop:flex-row mx-auto w-[97%] tablet_l:w-[94%] laptop_l:w-[89%] max-w-[1280px] ${styles.mint_details}`}>
+      <div className={`mt-20 flex-col justify-between laptop:flex-row mx-auto w-[97%] tablet_l:w-[94%] laptop_l:w-[89%] max-w-[1280px] ${styles.mint_details}`}>
         <div className={`w-[80%] mx-auto laptop:mx-0 laptop:w-[30%] ${styles.left}`}>
           {/* <div className='flex '>
         <div className='w-[40%]'> */}
@@ -56,7 +56,7 @@ const Mint = () => {
             <span>0.05 eth</span>
           </div>
         </div>
-        <div className={`mx-auto w-[50%] ${styles.right}`}>
+        <div className={`mx-auto laptop:mx-0 w-[50%] ${styles.right}`}>
           <div className={styles.package}>
             <h5>Burger Fac NFTs</h5>
             <p>Package ###</p>
